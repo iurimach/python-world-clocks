@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Flask Project{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>My Flask Project</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery Clock</a></li>
+                <li><a href="{{ url_for('calculator') }}">Calculator</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+
+</head>
+
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      
+    }
+
+    h1 {
+        color: #007bff;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    .skills {
+        margin-top: 20px;
+    }
+
+    .skills ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .skills li {
+        margin-bottom: 5px;
+    }
+
+    .technologies {
+        margin-top: 20px;
+        margin-left:20px;
+    }
+
+    .technologies h2 {
+        color: #28a745;
+    }
+
+    .technologies ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .technologies li {
+        margin-bottom: 5px;
+    }
+</style>
+<h1>About Me - Front-End Developer</h1>
+
+
+
+
+<div class="technologies">
+    <h2>Technologies I Work With:</h2>
+    <ul>
+        <li>HTML - CSS - Bootstrap</li>
+        <li></li>
+        <li>JavaScript - jquery</li>
+        <li>Angular - typescript</li>
+        <li>MySQL / SQL</li>
+        <li>Python Flask</li>
+        <li>React Native (Mobile)</li>
+    </ul>
+</div>
+
+
+
+
+<footer>
+    <p>&copy; 2024 My Flask Project</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Flask Project{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>My Flask Project</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery Clock</a></li>
+                <li><a href="{{ url_for('calculator') }}">Calculator</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+<body>
+
+    <div class="wrapper_text">
+        <P class="text1">New york</P>
+        <p class="text2">Berlin</p>
+        <p class="text3">Tokyo</p>
+        <p class="text4">Moscow</p>
+    </div>
+    <div class="wrapper">
+    
+    
+        
+        <div id="new-york" class="clock2">
+            <img src="/static/clock.jpg" alt="clock err" class="clockimg2">
+            <div class="arrow hour" id="ny-hour"></div>
+            <div class="arrow minute" id="ny-minute"></div>
+            <div class="arrow second" id="ny-second"></div>
+        </div>
+    
+    
+    <div id="berlin" class="clock3">
+        <img src="/static/clock.jpg" alt="clock err" class="clockimg3">
+        <div class="arrow hour" id="berlin-hour"></div>
+        <div class="arrow minute" id="berlin-minute"></div>
+        <div class="arrow second" id="berlin-second"></div>
+    </div>
+    <p class="text3-alterntive">Tokyo</p>
+    <div id="tokyo" class="clock4">
+        <img src="/static/clock.jpg" alt="clock err" class="clockimg4">
+        <div class="arrow hour" id="tokyo-hour"></div>
+        <div class="arrow minute" id="tokyo-minute"></div>
+        <div class="arrow second" id="tokyo-second"></div>
+    </div>
+
+    <p class="text4-alterntive">Moscow</p>
+    <div id="moscow" class="clock5">
+        
+        <img src="/static/clock.jpg" alt="clock err" class="clockimg5">
+        <div class="arrow hour" id="moscow-hour"></div>
+        <div class="arrow minute" id="moscow-minute"></div>
+        <div class="arrow second" id="moscow-second"></div>
+    </div>
+</div>
+
+    
+
+   <!--აქ უკავშირდება ჯს -->
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+
+<footer>
+    <p>&copy; 2024 My Flask Project</p>
+</footer>
+</body>
+</html>

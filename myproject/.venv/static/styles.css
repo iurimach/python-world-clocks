@@ -1,0 +1,348 @@
+/* static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 100px;
+    color: wheat;
+    
+}
+li>a {
+    color: #007bff; /* Set the text color to blue */
+    text-decoration: none;
+    font-size: 28px;
+}
+li> a:hover {
+    background-color: #555;
+    font-size: 30px;
+}
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* აქ იწყება საათების გალერიის სტილები galery style */
+
+
+body {
+    
+    
+    background-color: #282c34;
+}
+
+
+
+
+/*      აქ არის საათი მეორე */
+.clock2 {
+    position: absolute; 
+    max-width: 200px;
+    height: 200px;
+    border: 10px solid #61dafb;
+    border-radius: 50%;
+    margin-left: 30px;
+    display: flex;
+    
+    align-items: center;
+}
+.clockimg2{
+    position: relative;
+    background-size:contain;
+    background-repeat: no-repeat; 
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%
+ }
+ /* აქ არის მე-3 საათი  */
+ .clock3 {
+    position: absolute; 
+    max-width: 200px;
+    height: 200px;
+    border: 10px solid #61dafb;
+    border-radius: 50%;
+    margin-left: 300px;
+    display: flex;
+    
+    align-items: center;
+}
+.clockimg3{
+    position: relative;
+    background-size:contain;
+    background-repeat: no-repeat; 
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%
+ }
+
+  /* აქ არის მე-4 საათი  */
+  .clock4 {
+    position: absolute; 
+    max-width: 200px;
+    height: 200px;
+    border: 10px solid #61dafb;
+    border-radius: 50%;
+    margin-left: 570px;
+    display: flex;
+    
+    align-items: center;
+}
+.clockimg4{
+    position: relative;
+    background-size:contain;
+    background-repeat: no-repeat; 
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%
+ }
+  /* აქ არის მე-5 საათი  */
+  .clock5 {
+    position: absolute; 
+    max-width: 200px;
+    height: 200px;
+    border: 10px solid #61dafb;
+    border-radius: 50%;
+    margin-left: 840px;
+    display: flex;
+    
+    align-items: center;
+}
+.clockimg5{
+    position: relative;
+    background-size:contain;
+    background-repeat: no-repeat; 
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%
+ }
+
+ /*       აქ არის ისრები           */
+.arrow {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+   
+}
+
+.hour {
+    height: 5px;
+    background-color: rgb(241, 17, 17);
+    
+}
+
+.minute {
+    background-color: #0f0;
+    height: 2px;
+}
+
+.second {
+    height: 1px;
+    background-color: #00f;
+} 
+
+/* აქ არის ტექსტის ქალაქის სახელბის სტილები */
+.wrapper_text{
+    max-width: 99%;
+    display: flex;
+
+}
+.text1{
+    color: wheat;
+    font-size: 25px;
+    margin-left: 90px;
+}
+.text2{
+    color: wheat;
+    font-size: 25px;
+    margin-left: 180px;
+}
+.text3{
+    color: wheat;
+    font-size: 25px;
+    margin-left: 200px;
+}
+.text4{
+    color: wheat;
+    font-size: 25px;
+    margin-left: 190px;
+}
+.text3-alterntive{
+    display: none;
+}
+.text4-alterntive{
+    display: none;
+}
+
+/* // აქ წერია რესპონს სტილები , responseee */
+
+@media (max-width: 1000px) {
+    .clock5 {
+        margin-top: 280px;
+        margin-left: 30px;  
+    }
+    .text4{
+        display: none;
+    }
+    .text4-alterntive{
+        display: block;
+        position: absolute;
+        color: wheat;
+        font-size: 25px;
+        margin-top: 250px;
+        margin-left: 100px; 
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .clock4 {
+       
+        margin-top: 280px;
+        margin-left: 299px; 
+    }
+    .text3{
+        display: none;
+    }
+    .text3-alterntive{
+        display: block;
+        position: absolute;
+        color: wheat;
+        font-size: 25px;
+        margin-top: 250px;
+        margin-left: 380px; 
+    }
+    
+}
+
+
+/* caclulator style აქ ვიწყებ კალკულატორის გასტილვას რას გავს ტო-------- */
+
+
+.calculator {
+    max-width: 300px;
+    height: 250px;
+    margin: auto;
+    margin-top: 3px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.calcultor_input{
+    max-width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+#display{
+    width: 300px;
+    height: 30px;
+
+}
+button{
+    width: 64px;
+    height: 60px;
+    margin: 2px;
+}
+
+
+/* game_wrapper style იდექს გვერდის ტამშის შეფუთვა იწყება აქ */
+.html_body{
+    background-color: white;
+}
+.index_game_wrapper{
+    width: 500px;
+    height: 450px;
+    border: 1px solid rgb(162, 145, 145);
+    background-color: rgb(169, 169, 182);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.index_h1{
+    margin-left: 20%;
+}
+.index_p1{
+    margin-left: 40%;
+}
+
+.index_p2{
+    margin-left: 30%;
+    margin-top: 40px;
+}
+
+.index_form{
+    margin-left: 10%;
+}
+.index_bt1{
+    border-radius: 10px;
+    background-color: rgb(73, 188, 73);
+}
+.index_resetclick{
+    margin-top: 30%;
+    margin-left: 20%;
+    color: #007bff; /* Set the text color */
+            text-decoration: none; /* Remove the default underline */
+            font-weight: bold;
+}
+.index_resetclick:hover{
+   
+    color: #0f0;
+    
+}
+
+
+@keyframes textAnimation {
+    0% {
+        color: red;
+        
+    }
+    50% {
+        color: blue;
+        
+    }
+    100% {
+        color: green;
+        
+    }
+}
+
+.animated-text {
+    animation: textAnimation 3s infinite; /* Change the duration as needed */
+    margin-left: 40%;
+    font-size: 18px;
+}
